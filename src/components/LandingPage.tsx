@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Map, Upload, MessageCircle, BarChart, Shield, Users } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-image.jpg";
+import indiaMap from "@/assets/india-map.jpg";
 import dashboardPreview from "@/assets/dashboard-preview.jpg";
 
 const LandingPage = () => {
@@ -52,8 +52,8 @@ const LandingPage = () => {
       <section className="relative fra-section bg-gradient-to-br from-background to-muted overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <img 
-            src={heroImage} 
-            alt="Forest and tribal community" 
+            src={indiaMap} 
+            alt="Map of India showing forest rights areas" 
             className="w-full h-full object-cover"
           />
         </div>
@@ -158,7 +158,7 @@ const LandingPage = () => {
             <Button asChild size="xl" variant="secondary">
               <Link to="/dashboard">View Dashboard</Link>
             </Button>
-            <Button asChild size="xl" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+            <Button asChild size="xl" variant="secondary">
               <Link to="/support">Get Support</Link>
             </Button>
           </div>
