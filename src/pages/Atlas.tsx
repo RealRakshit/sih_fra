@@ -314,7 +314,7 @@ const Atlas = () => {
           {layers.cfr && mockFraData
             .filter(item => item.type === 'CFR')
             .map(claim => (
-              <div key={`cfr-${claim.id}`}>
+              <React.Fragment key={`cfr-${claim.id}`}>
                 <Marker
                   position={claim.position}
                   icon={createCustomIcon(claim.type)}
@@ -349,7 +349,7 @@ const Atlas = () => {
                   fillColor="#2563eb"
                   fillOpacity={0.1}
                 />
-              </div>
+              </React.Fragment>
             ))}
 
           {/* Village Boundaries */}
